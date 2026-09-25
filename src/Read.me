@@ -1,0 +1,34 @@
+Trabajo Práctico 2 - Paradigmas de Programación
+
+Este repositorio contiene la resolución completa del Trabajo Práctico 2, implementado en Java. El proyecto simula el sistema de gestión de un Evento Universitario, abarcando inscripciones, cupos y emisión de tickets.
+
+Conceptos Aplicados
+El código está modularizado para cumplir con los diagramas UML provistos e implementa las siguientes características avanzadas de Java:
+
+-Manejo de Excepciones: Creación y uso de `CupoExcedidoException` para el control de capacidad de las actividades.
+-Persistencia de Datos: Serialización de objetos en archivos `.dat` usando `ObjectOutputStream` e `ObjectInputStream`.
+-Polimorfismo e Interfaces: Implementación de la interfaz `Certificable` para emisión de certificados condicionales (Solo Cursos y Talleres).
+-Genéricos y Wildcards (Comodines): Métodos parametrizados para filtrar listas por tipo de actividad y calcular costos.
+-Clases Anidadas: Uso de la clase interna `TicketDeAcceso` vinculada directamente al estado de una `Inscripcion`.
+-Concurrencia (Threads): Hilo secundario para simular el envío asíncrono de tickets sin bloquear el flujo principal del programa.
+
+Ejecución
+El proyecto incluye cuatro clases ejecutables independientes para probar cada uno de los incisos requeridos:
+- `AppE1`: Prueba de inscripciones y persistencia en archivo.
+- `AppE2`: Prueba de polimorfismo y emisión de certificados.
+- `AppE3`: Prueba de filtrado genérico de listas y comodines.
+- `AppE4`: Prueba de clases anidadas y concurrencia (hilos).
+
+Capturas de Ejecución
+
+Ejercicio 1 - Excepciones y Persistencia:
+[Ejecución E1](captura_e1.png)
+
+Ejercicio 2 - Polimorfismo y Certificados:
+[Ejecución E2](captura_e2.png)
+
+Ejercicio 3 - Genéricos y Costos:
+[Ejecución E3](captura_e3.png)
+
+Ejercicio 4 - Concurrencia e Hilos:
+[Ejecución E4](captura_e4.png)
